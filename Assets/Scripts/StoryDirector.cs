@@ -2,11 +2,12 @@
 using Yarn.Unity;
 using DG.Tweening;
 using System.Collections;
+using UnityEngine.UI;
 
 public class StoryDirector : MonoBehaviour
 {
     public CharacterRetriever CharacterManager;
-    public SpriteRenderer background;
+    public Image FadeImage;
     public DialogueRunner dialogRunner;
     private Character currentCharacter;
 
@@ -19,7 +20,13 @@ public class StoryDirector : MonoBehaviour
     [YarnCommand("FadeInScene")]
     public void FadeInScene()
     {
-        background.DOFade(1f, 2f);
+        FadeImage.DOFade(0f, 1f);
+    }
+
+    [YarnCommand("FadeOutScene")]
+    public void FadeOutScene()
+    {
+        FadeImage.DOFade(1f, 1f);
     }
 
     [YarnCommand("ZoomInCamera")]
