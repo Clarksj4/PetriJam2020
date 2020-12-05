@@ -264,7 +264,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -10
   m_Sprite: {fileID: 21300000, guid: e4128237352812943ae2010c16227c08, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -425,6 +425,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Effects:
   - {fileID: 7545448063104736164, guid: c7b47eb2551935e43a320a1bc8381937, type: 3}
+--- !u!114 &998844644 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5935829475398715329, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
+  m_PrefabInstance: {fileID: 1963727476}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bec29c0a230741bdac901dba8da47ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1138197080
 GameObject:
   m_ObjectHideFlags: 0
@@ -611,6 +622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterManager: {fileID: 11400000, guid: 27d04cbba9bcb4044b1c9f6855287ca0, type: 2}
+  background: {fileID: 115041692}
+  dialogRunner: {fileID: 998844644}
 --- !u!1 &1594549814
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,6 +989,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475171564543, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5935829475398715329, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
+      propertyPath: startAutomatically
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475522760372, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}

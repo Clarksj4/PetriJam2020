@@ -57,7 +57,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6526107155385805949, guid: c3a911484bb46ee40a0dec1f2f276c12, type: 3}
       propertyPath: offScreen.x
-      value: -10
+      value: -12
       objectReference: {fileID: 0}
     - target: {fileID: 6526107155385805949, guid: c3a911484bb46ee40a0dec1f2f276c12, type: 3}
       propertyPath: peekDuration

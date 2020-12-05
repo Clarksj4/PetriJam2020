@@ -1,12 +1,26 @@
 ﻿using UnityEngine;
 using Yarn.Unity;
 using DG.Tweening;
+using System.Collections;
 
 public class NarrativeManager : MonoBehaviour
 {
     public CharacterManager CharacterManager;
-
+    public SpriteRenderer background;
+    public DialogueRunner dialogRunner;
     private Character currentCharacter;
+
+    private IEnumerator Start()
+    {
+        yield return new WaitForSeconds(1f);
+        dialogRunner.StartDialogue();
+    }
+
+    [YarnCommand("FadeInScene")]
+    public void FadeInScene()
+    {
+        background.DOFade(1f, 2f);
+    }
 
     [YarnCommand("ZoomInCamera")]
     public void ZoomInCamera()

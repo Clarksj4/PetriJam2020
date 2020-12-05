@@ -3,19 +3,23 @@ tags:
 colorID: 1
 position: 299,83
 ---
-<< PlayTrackByName MusicManager TitleAmbience>> 
 <<SetCharacter NarrativeManager Venus>>
+Hey Merc
+Merc...
+Hello?
+MERCURY!!!
+<<FadeInScene NarrativeManager>> 
+-> Huh. Whaa...?
+-> Who's that.
+<< PlayTrackByName MusicManager TitleAmbience>> 
 << Peek Venus>> 
-Hello my name is Venus.
--> I didn't ask for you, Venus. Nobody did.
+Hey.
+It's Venus.
 -> Hi!
-<<SetFacialExpression Venus Square>>
-<< PlayTrackByName MusicManager NormalAmbience>>
+-> I didn't ask for you, Venus. Nobody did.
 << Appear Venus>> 
 Ok.
-<< PlaySFXByName SFXManager MasculineGasp>>
-I'll Leave 
-[[Whatever|Node]]
+I'll Leave
 ===
 title: Node
 tags: 
