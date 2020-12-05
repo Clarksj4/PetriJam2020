@@ -129,7 +129,7 @@ public class Character : MonoBehaviour
 
         if (color == "RED")
         {
-            targetColor = Color.red;
+            targetColor = new Color(1f, 0.4f, 0.6f, 1f);
         }
         else if (color == "BLACK")
         {
