@@ -39,14 +39,12 @@ public class StoryDirector : MonoBehaviour
     [YarnCommand("SetCharacter")]
     public void SetCharacter(string name)
     {
-        // TODO: Remove current character
+        // Remove current character
         if (currentCharacter != null)
             currentCharacter.Remove();
 
-        // TODO: Add new character
+        // Add new character
         currentCharacter = CharacterManager.GetCharacterByName(name);
-
-        // TODO: put it somewhere...
     }
 
     // TODO: Go to another scene

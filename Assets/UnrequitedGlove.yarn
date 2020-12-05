@@ -4,21 +4,30 @@ colorID: 1
 position: 299,83
 ---
 <<SetCharacter StoryDirector Venus>>
+<<ShowNarrator NarrativeManager other>> 
 Hey Merc
 Merc...
 Hello?
 MERCURY!!!
 <<FadeInScene StoryDirector>> 
+<<ShowNarrator NarrativeManager self>>
 -> Huh. Whaa...?
 -> Who's that.
 << PlayTrackByName MusicManager TitleAmbience>> 
 << Peek Venus>> 
+<<ShowNarrator NarrativeManager other>>
 Hey.
 It's Venus.
+<<ShowNarrator NarrativeManager self>>
 -> Hi!
 -> I didn't ask for you, Venus. Nobody did.
 << Appear Venus>> 
+<<ShowNarrator NarrativeManager other>>
 Ok.
+<<ShowNarrator NarrativeManager self>>
+...
+Gawd she's so hot!
+<<ShowNarrator NarrativeManager other>>
 I'll Leave
 << Disappear Venus>>
 ===
