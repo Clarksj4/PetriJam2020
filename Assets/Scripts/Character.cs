@@ -6,6 +6,7 @@ public class Character : MonoBehaviour
 {
     public SpriteRetriever SpriteManager;
     public SpriteRenderer FacialRenderer;
+
     [Header("Appear")]
     public Vector3 offScreen;
     public Vector3 peeking;
