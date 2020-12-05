@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "SpriteManager")]
-public class SpriteManager : ScriptableObject
+[CreateAssetMenu(fileName = "SpriteRetriever")]
+public class SpriteRetriever : ScriptableObject
 {
     public Sprite[] Sprites;
 

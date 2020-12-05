@@ -5,7 +5,7 @@ using System.Collections;
 
 public class NarrativeManager : MonoBehaviour
 {
-    public CharacterManager CharacterManager;
+    public CharacterRetriever CharacterManager;
     public SpriteRenderer background;
     public DialogueRunner dialogRunner;
     private Character currentCharacter;

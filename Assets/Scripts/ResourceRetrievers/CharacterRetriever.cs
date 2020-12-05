@@ -1,8 +1,8 @@
 ﻿using System.Linq;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "CharacterManager")]
-public class CharacterManager : ScriptableObject
+[CreateAssetMenu(fileName = "CharacterRetriever")]
+public class CharacterRetriever : ScriptableObject
 {
     public Character[] Characters;
 

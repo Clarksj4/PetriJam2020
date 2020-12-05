@@ -4,7 +4,7 @@ using Yarn.Unity;
 
 public class Character : MonoBehaviour
 {
-    public SpriteManager SpriteManager;
+    public SpriteRetriever SpriteManager;
     public SpriteRenderer FacialRenderer;
     [Header("Appear")]
     public Vector3 offScreen;
