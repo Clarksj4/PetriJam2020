@@ -67,6 +67,10 @@ PrefabInstance:
       propertyPath: appearDuration
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 6526107155385805949, guid: c3a911484bb46ee40a0dec1f2f276c12, type: 3}
+      propertyPath: disappearDuration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6526107155385805951, guid: c3a911484bb46ee40a0dec1f2f276c12, type: 3}
       propertyPath: m_Name
       value: Venus

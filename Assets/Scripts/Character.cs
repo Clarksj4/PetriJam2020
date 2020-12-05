@@ -12,6 +12,7 @@ public class Character : MonoBehaviour
     public Vector3 onScreen;
     public float appearDuration;
     public float peekDuration;
+    public float disappearDuration;
 
     // Removes this character from the scene
     public void Remove()
@@ -36,6 +37,12 @@ public class Character : MonoBehaviour
     public void Appear()
     {
         transform.DOMove(onScreen, appearDuration).SetEase(Ease.OutSine);
+    }
+
+    [YarnCommand("Disappear")]
+    public void Disappear()
+    {
+        transform.DOMove(-offScreen, disappearDuration).SetEase(Ease.OutSine);
     }
 
     [YarnCommand("PunchUp")]
