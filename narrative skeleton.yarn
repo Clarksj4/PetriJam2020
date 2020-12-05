@@ -15,7 +15,7 @@ MERCURY!
 title: Path 1
 tags: Flirty 
 colorID: 0
-position: 662,134
+position: 660,134
 ---
 Smooth as always Merc
 Did you forget we were crossing paths today?
@@ -29,9 +29,31 @@ Did you forget we were crossing paths today?
 title: Path 2
 tags: Friendly Neutral
 colorID: 0
-position: 702,429
+position: 706,419
 ---
 -Friendly answer leads V to ask Merc how he's been lately
+So..... How you been?
+-> I've been struggling a bit lately. I'm so alone
+-> I've given up on trying to talk to the Sun, she's such a cold bitch
+-> Yeah... I'm ok... Been better
+... (ignores Merc's answer)
+I can't wait to tell you something
+Are you ready??
+->...
+Well... You know my sister, right? Earth?
+-> Yeah... 
+She introduced me to her neighbour, Mars
+He is just sooooooo hot... I can't believe that I've never noticed him before!
+-> You know...
+I've never felt like this before
+He's just soooooo dreamy! 
+-> I've been really struggling lately and need a friend right now
+-> Could we talk about this later?
+Riiiiiiight?!? 
+Mars and Venus... 
+It has a certain ring to it, don't you think?
+[[Later V|Node_7]]
+[[Sure V, whatever|Node_3]]
 ===
 title: Path 3
 tags: 
@@ -65,9 +87,9 @@ I met someone! (V looks elated)
 title: Node_3
 tags: Friendly
 colorID: 0
-position: 1006,336
+position: 1028,365
 ---
-Empty Text
+NOw that I think
 ===
 title: Node_4
 tags: 
@@ -79,7 +101,24 @@ V explains she met Ma through Ea. fusses about how big and strong he is
 title: Node_5
 tags: 
 colorID: 0
-position: 505,-44
+position: 1616,-73
 ---
 Empty Text
+===
+title: Node_6
+tags: 
+colorID: 0
+position: 367,-112
+---
+Empty Text
+===
+title: Node_7
+tags: 
+colorID: 0
+position: 944,658
+---
+WTF Merc...
+SO unlike him
+I wonder what's got him all riled up...
+(Venus leaves)
 ===
