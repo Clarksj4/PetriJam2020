@@ -1,35 +1,57 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Linq;
+using UnityEngine;
 using Yarn.Unity;
 using DG.Tweening;
+using System.Collections.Generic;
 
 public class MusicManager : MonoBehaviour
 {
-    public AudioSource[] Tracks;
+    public List<AudioSource> Tracks;
+    private List<float> MaxVolumes = new List<float>();
+
+    private void Start()
+    {
+        // Current volume is considered max volume.
+        for (int i = 0; i < Tracks.Count; i++)
+            MaxVolumes.Add(Tracks[i].volume);
+    }
 
     [YarnCommand("PlayTrackByName")]
     public void PlayTrackByName(string name)
     {
-        foreach (AudioSource track in Tracks)
-        {
-            // Play the named clip
-            if (track.clip.name == name)
-                FadeInTrack(track);
+        int index = IndexOfTrack(name);
+        float volume = MaxVolumes[index];
 
-            // Stop all other clips
+        for (int i = 0; i < Tracks.Count; i++)
+        {
+            if (i == index)
+                FadeInTrack(Tracks[i], volume);
             else
-                FadeOutTrack(track);
+                FadeOutTrack(Tracks[i]);
         }
     }
 
-    private void FadeInTrack(AudioSource track)
+    private void FadeInTrack(AudioSource track, float volume)
     {
         track.volume = 0;
         track.Play();
-        track.DOFade(1f, 1f);
+        track.DOFade(volume, 1f);
     }
 
     private void FadeOutTrack(AudioSource track)
     {
         track.DOFade(0f, 1f);
+    }
+
+    private int IndexOfTrack(string name)
+    {
+        for (int i = 0; i < Tracks.Count; i++)
+        {
+            if (Tracks[i].clip.name == name)
+                return i;
+        }
+
+        return -1;
     }
 }

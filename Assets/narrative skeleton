@@ -1,0 +1,85 @@
+title: Start
+tags: 
+colorID: 0
+position: 345,376
+---
+Hey Merc
+Merc... 
+Hello? 
+MERCURY!
+[Merc wakes up]
+[[Heeeeeey Venus... Fancy meeting you here |Path 1]]
+[[Oh! Venus! Sorry! I... Uh... Didn't see you there!|Path 2]]
+[[Hi Venus|Path 2]]
+===
+title: Path 1
+tags: Flirty 
+colorID: 0
+position: 662,134
+---
+Smooth as always Merc
+Did you forget we were crossing paths today?
+->...
+-> No, I just mean
+-> ...
+-> [i]I've been thinking of you[/i]
+[[You look great!|Node_2]]
+[[It's good to see you, V|Node_3]]
+===
+title: Path 2
+tags: Friendly Neutral
+colorID: 0
+position: 702,429
+---
+-Friendly answer leads V to ask Merc how he's been lately
+===
+title: Path 3
+tags: 
+colorID: 0
+position: 1280,947
+---
+Empty Textdszcz
+===
+title: Node
+tags: 
+colorID: 0
+position: 1373,164
+---
+No need to act so surprised! 
+Some think i am quite beautiful, you know
+===
+title: Node_2
+tags: Flirty 
+colorID: 0
+position: 994,70
+---
+(V blushes)
+Thanks Merc
+I have exciting news!
+-> ...
+I met someone! (V looks elated)
+[[WhaaaAAaat?!?!? |Node]]
+[[How?!?!?!|Node_4]]
+[[Who?!?!?!??!|Node_4]]
+===
+title: Node_3
+tags: Friendly
+colorID: 0
+position: 1006,336
+---
+Empty Text
+===
+title: Node_4
+tags: 
+colorID: 0
+position: 1291,384
+---
+V explains she met Ma through Ea. fusses about how big and strong he is
+===
+title: Node_5
+tags: 
+colorID: 0
+position: 505,-44
+---
+Empty Text
+===

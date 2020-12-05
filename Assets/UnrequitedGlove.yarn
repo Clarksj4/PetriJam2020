@@ -1,9 +1,10 @@
 title: Start
 tags: 
 colorID: 1
-position: 299,83
+position: 300,82
 ---
 <<SetCharacter StoryDirector Venus>>
+<< PlayTrackByName MusicManager NormalAmbience>> 
 <<ShowNarrator NarrativeManager other>> 
 Hey Merc
 Merc...
@@ -21,11 +22,13 @@ It's Venus.
 <<ShowNarrator NarrativeManager self>>
 -> Hi!
 -> I didn't ask for you, Venus. Nobody did.
+    <<PlaySFXByName SFXManager MasculineGasp>> 
 << Appear Venus>> 
 <<ShowNarrator NarrativeManager other>>
 Ok.
 <<ShowNarrator NarrativeManager self>>
 ...
+<<PlaySFXByName SFXManager AweWhistle>> 
 Gawd she's so hot!
 <<ShowNarrator NarrativeManager other>>
 I'll Leave
