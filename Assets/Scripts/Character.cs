@@ -8,6 +8,10 @@ public class Character : MonoBehaviour
     public SpriteRetriever SpriteManager;
     public SpriteRenderer FacialRenderer;
 
+    public MeshRenderer TintMesh;
+    private Material TintMaterial;
+
+
     [Header("Appear")]
     public Vector3 offScreen;
     public Vector3 peeking;
@@ -20,12 +24,21 @@ public class Character : MonoBehaviour
 
     private Coroutine _shakeRoutine;
 
+    private Coroutine _tintRoutine;
+    private Color _albedoStartColor;
+
     private void Start()
     {
         screenEdgePosition = GetScreenEdgePosition();
 
         offScreen = screenEdgePosition + ((screenEdgePosition - onScreen) * 2);
         transform.position = offScreen;
+
+        if (TintMesh)
+        {
+            TintMaterial = TintMesh.material;
+            _albedoStartColor = TintMaterial.color;
+        }
     }
 
     private Vector3 GetScreenEdgePosition()
@@ -102,6 +115,54 @@ public class Character : MonoBehaviour
             yield return null;
         }
         transform.rotation = Quaternion.identity;
+    }
+
+    [YarnCommand("TintOn")]
+    public void TintOn(string color)
+    {
+        if (_tintRoutine != null)
+        {
+            StopCoroutine(_tintRoutine);
+        }
+
+        Color targetColor = Color.white;
+
+        if (color == "RED")
+        {
+            targetColor = Color.red;
+        }
+        else if (color == "BLACK")
+        {
+            targetColor = Color.black;
+        }
+
+        _tintRoutine = StartCoroutine(TintToColor(targetColor));
+    }
+
+    [YarnCommand("TintOff")]
+    public void TintOff()
+    {
+        if (_tintRoutine != null)
+        {
+            StopCoroutine(_tintRoutine);
+        }
+
+        _tintRoutine = StartCoroutine(TintToColor(_albedoStartColor));
+    }
+
+    private IEnumerator TintToColor(Color targetColor)
+    {
+        Color startColor = TintMaterial.color;
+        float t = 0f;
+        float maxTime = 0.5f;
+        while (t < maxTime)
+        {
+            float tn = t * (1 / maxTime);
+            TintMaterial.color = Color.Lerp(startColor, targetColor, tn);
+            t += Time.deltaTime;
+            yield return null;
+        }
+        TintMaterial.color = targetColor;
     }
 
 }
