@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: CharacterRetriever
   m_EditorClassIdentifier: 
   Characters:
-  - {fileID: 7664312224498413563, guid: 67d7d1892d8509746844a78538fa605b, type: 3}
-  - {fileID: 3714565944891816822, guid: fa1f532c0cd36854cae8c2ef8db053cb, type: 3}
-  - {fileID: 7475108102336108154, guid: 0ff740bdb355adc4e979c6eb37a3948d, type: 3}
+  - {fileID: 7678097823999147150, guid: d3d0d70bcb8fa46f38a68f4acaa783ec, type: 3}
+  - {fileID: 7140944596543951175, guid: 5dd11e8c806794d269d3eedd001f1127, type: 3}
