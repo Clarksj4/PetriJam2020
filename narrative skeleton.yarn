@@ -15,7 +15,7 @@ MERCURY!
 title: Path 1
 tags: Flirty 
 colorID: 0
-position: 660,134
+position: 661,138
 ---
 Smooth as always Merc
 Did you forget we were crossing paths today?
@@ -24,12 +24,12 @@ Did you forget we were crossing paths today?
 -> ...
 -> [i]I've been thinking of you[/i]
 [[You look great!|Node_2]]
-[[It's good to see you, V|Node_3]]
+[[It's good to see you, V|Path 2]]
 ===
 title: Path 2
 tags: Friendly Neutral
 colorID: 0
-position: 701,426
+position: 709,426
 ---
 -Friendly answer leads V to ask Merc how he's been lately
 So..... How you been?
@@ -54,28 +54,34 @@ Mars and Venus...
 It has a certain ring to it, don't you think?
 Yeah...
 I'm going to ask Earth to set us up
-[[Later V|Node_7]]
-[[Sure V, whatever|Node_3]]
+[[Later V|V STorms Off]]
+[[Sure V, whatever|Venus calms down and asks Merc whats bugging him?]]
 ===
-title: Path 3
+title: Merc Monologue
 tags: 
 colorID: 0
-position: 1179,663
+position: 1179,664
 ---
 -> I wish she got me/felt the same/knew
+Just as I thought it was time to tell her
 ===
 title: Node
 tags: 
 colorID: 0
-position: 1320,19
+position: 1325,-57
 ---
 No need to act so surprised! 
 Some think i am quite beautiful, you know
+->Oh Venus, you are beautiful
+
+Venus misunderstands Mercs confusion 
+Merc panics that he may have missed his shot
+Merc lays it on thick?
 ===
 title: Node_2
 tags: Flirty 
 colorID: 0
-position: 994,70
+position: 995,70
 ---
 (V blushes)
 Thanks Merc
@@ -86,16 +92,16 @@ I met someone! (V looks elated)
 [[How?!?!?!|Node_4]]
 [[Who?!?!?!??!|Node_4]]
 ===
-title: Node_3
+title: Venus calms down and asks Merc whats bugging him?
 tags: Friendly
 colorID: 0
-position: 1028,365
+position: 1270,388
 ---
-Ok, sorry, I'm just so excited!
-You'll understand when you meet him
-->When I meet him?!?
-(Mercury freaking out)
-->Honestly, V, 
+Ok, sorry, I don't mean to bore you
+I'm just so excited!
+
+-----------i wish that it was me that she 
+
 
 Now that I think about it
 Have you met Earth? 
@@ -109,9 +115,23 @@ I mean have you MET Earth? Spoken with her?
 title: Node_4
 tags: 
 colorID: 0
-position: 1351,330
+position: 1294,173
 ---
-V explains she met Ma through Ea. fusses about how big and strong he is
+Well... You know my sister, right? Earth?
+-> Yeah... 
+She introduced me to her neighbour, Mars!
+-> Mars?!? That hot head!?
+
+
+He is just sooooooo hot... I can't believe that I've never noticed him before!
+
+I've never felt like this before
+He's just soooooo dreamy! 
+-> I've been really struggling lately and need a friend right now
+-> Could we talk about this later?
+Riiiiiiight?!? 
+Mars and Venus... 
+It has a certain ring to it, don't you think?
 ===
 title: Node_5
 tags: 
@@ -127,7 +147,7 @@ position: 367,-112
 ---
 Empty Text
 ===
-title: Node_7
+title: V STorms Off
 tags: 
 colorID: 0
 position: 944,658
