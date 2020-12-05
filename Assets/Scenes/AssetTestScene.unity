@@ -463,18 +463,6 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4371009657573353666, guid: 43c5f2309996c4b0e8234e5901c63d74, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4371009657573353666, guid: 43c5f2309996c4b0e8234e5901c63d74, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4371009657573353666, guid: 43c5f2309996c4b0e8234e5901c63d74, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4371009657573353671, guid: 43c5f2309996c4b0e8234e5901c63d74, type: 3}
       propertyPath: m_Name
       value: Earth
