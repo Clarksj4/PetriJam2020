@@ -3,7 +3,7 @@ using Yarn.Unity;
 using DG.Tweening;
 using System.Collections;
 
-public class NarrativeManager : MonoBehaviour
+public class StoryDirector : MonoBehaviour
 {
     public CharacterRetriever CharacterManager;
     public SpriteRenderer background;

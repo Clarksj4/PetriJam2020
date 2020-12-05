@@ -589,7 +589,7 @@ GameObject:
   - component: {fileID: 1378232754}
   - component: {fileID: 1378232756}
   m_Layer: 0
-  m_Name: NarrativeManager
+  m_Name: StoryDirector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

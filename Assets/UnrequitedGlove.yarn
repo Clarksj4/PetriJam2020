@@ -3,12 +3,12 @@ tags:
 colorID: 1
 position: 299,83
 ---
-<<SetCharacter NarrativeManager Venus>>
+<<SetCharacter StoryDirector Venus>>
 Hey Merc
 Merc...
 Hello?
 MERCURY!!!
-<<FadeInScene NarrativeManager>> 
+<<FadeInScene StoryDirector>> 
 -> Huh. Whaa...?
 -> Who's that.
 << PlayTrackByName MusicManager TitleAmbience>> 
