@@ -1,23 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Yarn.Unity;
+using DG.Tweening;
 
 public class NarrativeManager : MonoBehaviour
 {
-    public SpriteManager SpriteManager;
-    public SpriteRenderer characterImage;
+    public CharacterManager CharacterManager;
 
-    private void Start()
+    private Character currentCharacter;
+
+    [YarnCommand("ZoomInCamera")]
+    public void ZoomInCamera()
     {
-        // Test
-        SetCharacter("Sally");
+        Transform cameraTransform = Camera.main.transform;
+        cameraTransform.DOMoveZ(cameraTransform.position.z + 2f, 0.5f).SetEase(Ease.OutCubic);
     }
 
-    // Change who we're talking to
+    [YarnCommand("ZoomOutCamera")]
+    public void ZoomOutCamera()
+    {
+        Transform cameraTransform = Camera.main.transform;
+        cameraTransform.DOMoveZ(cameraTransform.position.z - 2f, 0.5f).SetEase(Ease.OutCubic);
+    }
+
+    [YarnCommand("SetCharacter")]
     public void SetCharacter(string name)
     {
-        characterImage.sprite = SpriteManager.GetSpriteByName(name);
+        // TODO: Remove current character
+        if (currentCharacter != null)
+            currentCharacter.Remove();
+
+        // TODO: Add new character
+        currentCharacter = CharacterManager.GetCharacterByName(name);
+
+        // TODO: put it somewhere...
     }
-    
+
     // TODO: Go to another scene
+    [YarnCommand("SceneChange")]
+    public void SceneChange(string sceneName)
+    {
+
+    }
 }

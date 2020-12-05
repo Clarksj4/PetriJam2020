@@ -1,0 +1,20 @@
+title: Start
+tags: 
+colorID: 0
+position: 299,74
+---
+<<SetCharacter NarrativeManager Sally>>
+<< ZoomInCamera NarrativeManager>>
+<< PlayTrackByName MusicManager TitleAmbience>> 
+Hello my name is Sally.
+-> I didn't ask for you, Sally. Nobody did.
+<< PlayEffect ScreenEffectsManager ParticlePop>>
+<<SetFacialExpression Sally Square>>
+<<PunchUp Sally>> 
+<< ZoomOutCamera NarrativeManager>>
+<< PlayTrackByName MusicManager NormalAmbience>>
+Ok.
+<< PlaySFXByName SFXManager MasculineGasp>>
+<< StopEffect ScreenEffectsManager ParticlePop>> 
+I'll Leave
+===
