@@ -1,20 +1,26 @@
 title: Start
 tags: 
-colorID: 0
-position: 299,74
+colorID: 1
+position: 299,83
 ---
-<<SetCharacter NarrativeManager Sally>>
-<< ZoomInCamera NarrativeManager>>
 << PlayTrackByName MusicManager TitleAmbience>> 
-Hello my name is Sally.
--> I didn't ask for you, Sally. Nobody did.
-<< PlayEffect ScreenEffectsManager ParticlePop>>
-<<SetFacialExpression Sally Square>>
-<<PunchUp Sally>> 
-<< ZoomOutCamera NarrativeManager>>
+<<SetCharacter NarrativeManager Venus>>
+<< Peek Venus>> 
+Hello my name is Venus.
+-> I didn't ask for you, Venus. Nobody did.
+-> Hi!
+<<SetFacialExpression Venus Square>>
 << PlayTrackByName MusicManager NormalAmbience>>
+<< Appear Venus>> 
 Ok.
 << PlaySFXByName SFXManager MasculineGasp>>
-<< StopEffect ScreenEffectsManager ParticlePop>> 
-I'll Leave
+I'll Leave 
+[[Whatever|Node]]
+===
+title: Node
+tags: 
+colorID: 0
+position: 677,-208
+---
+Another thing.
 ===
