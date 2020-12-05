@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using DG.Tweening;
 using Yarn.Unity;
+using System.Collections;
 
 public class Character : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Character : MonoBehaviour
     public float disappearDuration;
 
     private Vector3 screenEdgePosition;
+
+    private Coroutine _shakeRoutine;
 
     private void Start()
     {
@@ -73,4 +76,32 @@ public class Character : MonoBehaviour
     {
         transform.DOPunchPosition(Vector3.up * 0.15f, 0.5f);
     }
+
+    [YarnCommand("Wiggle")]
+    public void Wiggle()
+    {
+        if (_shakeRoutine != null)
+        {
+            StopCoroutine(_shakeRoutine);
+            transform.rotation = Quaternion.identity;
+        }
+
+        _shakeRoutine = StartCoroutine(WiggleRoutine(0.5f));
+    }
+
+    private IEnumerator WiggleRoutine(float time)
+    {
+        float angle = 7f;
+        float speed = 30f;
+        float elapsedTime = 0f;
+        while (elapsedTime < time)
+        {
+            float r = Mathf.Sin(elapsedTime * speed) * angle;
+            transform.rotation = Quaternion.Euler(0, r, 0);
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+        transform.rotation = Quaternion.identity;
+    }
+
 }
