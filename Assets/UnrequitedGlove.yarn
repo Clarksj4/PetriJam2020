@@ -37,7 +37,7 @@ I'll Leave
 title: Node
 tags: 
 colorID: 0
-position: 208,-195
+position: 206,-194
 ---
 <<SetCharacter StoryDirector Venus>>
 <<PlayTrackByName MusicManager NormalAmbience>> 
@@ -50,61 +50,124 @@ MERCURY!
 <<ShowNarrator NarrativeManager self>>
 -> Huh. Whaa...?
 -> Who's that.
-<< PlayTrackByName MusicManager TitleAmbience>> 
-<< Peek Venus>> 
+<<PlayTrackByName MusicManager TitleAmbience>> 
+<<Peek Venus>> 
 <<ShowNarrator NarrativeManager other>>
 Hey.
 It's Venus.
 <<ShowNarrator NarrativeManager self>>
-[[Heeeeeey Venus... Fancy meeting you here.|Path1]]
-[[Oh! Venus! Sorry! I... Uh... Didn't see you there!|Path2]]
-[[Hi Venus|Path2]]
+[[Heeeeeey Venus... Fancy meeting you here.|Flirt]]
+[[Oh! Venus! Sorry! I... Uh... Didn't see you there!|VenusMetMars]]
 -> I didn't ask for you, Venus. Nobody did.
     <<PlaySFXByName SFXManager RecordScratch>>
     <<StopMusic MusicManager>> 
-    << Appear Venus>> 
+    <<Appear Venus>> 
     <<ShowNarrator NarrativeManager other>>
     Oh.
     I'll Leave.
-<< Disappear Venus>>
+    << Disappear Venus>>
+    <<FadeOutScene StoryDirector>>
 ===
-title: Path1
+title: Flirt
 tags: 
 colorID: 0
-position: 648,-259
+position: 467,-366
 ---
 <<ShowNarrator NarrativeManager other>>
+<<Appear Venus>> 
 Smooth as always Merc.
 <<ShowNarrator NarrativeManager self>>
 ...
 <<PlaySFXByName SFXManager AweWhistle>> 
 Gawd she's so hot!
 <<ShowNarrator NarrativeManager other>>
-Did you forget we were crossing paths today?
+Did you forget we were crossing orbits today?
 ->...
--> No, I just mean...
+-> No, I just...
 -> I've been thinking of you
-[[You look great!|Node_2]]
+...
+[[You look great!|ExcitingNews]]
 [[It's good to see you, V|Node_3]]
 ===
-title: Path2
+title: ExcitingNews
 tags: 
 colorID: 0
-position: 904,210
+position: 808,-441
 ---
-So... How ya been lately?
-===
-title: Node_2
-tags: 
-colorID: 0
-position: 935,-352
----
-Empty Text
+<<>>
+Thanks Merc
+I have exciting news!
+-> ...
+I met someone! (V looks elated)
+[[How?!?!?!|Node_4]]
+[[Who?!?!?!??!|Node_4]]
 ===
 title: Node_3
 tags: 
 colorID: 0
-position: 1155,-352
+position: 825,-146
+---
+Ok, sorry, I'm just so excited!
+You'll understand when you meet him
+->When I meet him?!?
+(Mercury freaking out)
+->Honestly, V, 
+
+Now that I think about it
+Have you met Earth? 
+-> I've seen her, following her orbit
+Of course you've SEEN her, we're in the same system!
+I mean have you MET Earth? Spoken with her?
+->???
+->No, I guess not
+->You are my only friend, V, you KNOW that I haven't met your sister.
+===
+title: VenusShaftedLeaves
+tags: 
+colorID: 0
+position: 873,118
+---
+WTF Merc...
+That is so unlike you.
+I wonder what's got him all riled up...
+<<Disappear Venus>>
+===
+title: VenusMetMars
+tags: 
+colorID: 8
+position: 479,111
+---
+<<ShowNarrator NarrativeManager other>>
+So... How you been?
+-> I've given up on trying to talk to the Sun, she's such a cold bitch.
+-> Yeah... I'm ok... Been better.
+...
+<<Jump Venus>>
+I can't wait to tell you something
+<<Jump Venus>>
+Are you ready??
+->...
+Well... You know my sister, right? Earth?
+-> Yeah... 
+She introduced me to her neighbour, Mars
+He is just sooooooo hot... I can't believe that I've never noticed him before!
+<<ShowNarrator NarrativeManager self>>
+... I'm so alone...
+<<ShowNarrator NarrativeManager other>>
+I've never felt like this before!
+He's just soooooo dreamy!...
+-> I've been really struggling lately and need a friend right now.
+-> Could we talk about this later?
+Riiiiiiight?!? 
+Mars and Venus... 
+It has a certain ring to it, don't you think?
+[[Later V|VenusShaftedLeaves]]
+[[Sure V, whatever|Node_3]]
+===
+title: Node_4
+tags: 
+colorID: 0
+position: 1109,-508
 ---
 Empty Text
 ===

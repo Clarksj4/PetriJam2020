@@ -29,7 +29,7 @@ Did you forget we were crossing paths today?
 title: Path 2
 tags: Friendly Neutral
 colorID: 0
-position: 706,419
+position: 701,426
 ---
 -Friendly answer leads V to ask Merc how he's been lately
 So..... How you been?
@@ -52,20 +52,22 @@ He's just soooooo dreamy!
 Riiiiiiight?!? 
 Mars and Venus... 
 It has a certain ring to it, don't you think?
+Yeah...
+I'm going to ask Earth to set us up
 [[Later V|Node_7]]
 [[Sure V, whatever|Node_3]]
 ===
 title: Path 3
 tags: 
 colorID: 0
-position: 1280,947
+position: 1179,663
 ---
-Empty Textdszcz
+-> I wish she got me/felt the same/knew
 ===
 title: Node
 tags: 
 colorID: 0
-position: 1373,164
+position: 1320,19
 ---
 No need to act so surprised! 
 Some think i am quite beautiful, you know
@@ -89,12 +91,25 @@ tags: Friendly
 colorID: 0
 position: 1028,365
 ---
-NOw that I think
+Ok, sorry, I'm just so excited!
+You'll understand when you meet him
+->When I meet him?!?
+(Mercury freaking out)
+->Honestly, V, 
+
+Now that I think about it
+Have you met Earth? 
+-> I've seen her, following her orbit
+Of course you've SEEN her, we're in the same system!
+I mean have you MET Earth? Spoken with her?
+->???
+->No, I guess not
+->You are my only friend, V, you KNOW that I haven't met your sister.
 ===
 title: Node_4
 tags: 
 colorID: 0
-position: 1291,384
+position: 1351,330
 ---
 V explains she met Ma through Ea. fusses about how big and strong he is
 ===
@@ -117,8 +132,14 @@ tags:
 colorID: 0
 position: 944,658
 ---
-WTF Merc...
-SO unlike him
-I wonder what's got him all riled up...
-(Venus leaves)
+Wow...
+How rude!
+(Venus leaves) Path 3
+===
+title: Node_8
+tags: 
+colorID: 0
+position: 1822,279
+---
+Empty Text
 ===
