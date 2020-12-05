@@ -32,6 +32,13 @@ public class MusicManager : MonoBehaviour
         }
     }
 
+    [YarnCommand("StopMusic")]
+    public void StopMusic()
+    {
+        foreach (AudioSource track in Tracks)
+            FadeOutTrack(track);
+    }
+
     private void FadeInTrack(AudioSource track, float volume)
     {
         track.volume = 0;

@@ -1,7 +1,7 @@
 title: Start
 tags: 
 colorID: 1
-position: 300,82
+position: -135,-117
 ---
 <<SetCharacter StoryDirector Venus>>
 << PlayTrackByName MusicManager NormalAmbience>> 
@@ -37,10 +37,10 @@ I'll Leave
 title: Node
 tags: 
 colorID: 0
-position: 627,-197
+position: 208,-195
 ---
 <<SetCharacter StoryDirector Venus>>
-<< PlayTrackByName MusicManager NormalAmbience>> 
+<<PlayTrackByName MusicManager NormalAmbience>> 
 <<ShowNarrator NarrativeManager other>> 
 Hey Merc
 Merc... 
@@ -60,29 +60,51 @@ It's Venus.
 [[Oh! Venus! Sorry! I... Uh... Didn't see you there!|Path2]]
 [[Hi Venus|Path2]]
 -> I didn't ask for you, Venus. Nobody did.
-    <<PlaySFXByName SFXManager MasculineGasp>> 
+    <<PlaySFXByName SFXManager RecordScratch>>
+    <<StopMusic MusicManager>> 
     << Appear Venus>> 
     <<ShowNarrator NarrativeManager other>>
-    Ok.
-    <<ShowNarrator NarrativeManager self>>
-    ...
-    <<PlaySFXByName SFXManager AweWhistle>> 
-    Gawd she's so hot!
-    <<ShowNarrator NarrativeManager other>>
+    Oh.
     I'll Leave.
 << Disappear Venus>>
 ===
 title: Path1
 tags: 
 colorID: 0
-position: 815,-132
+position: 648,-259
 ---
-Empty Text
+<<ShowNarrator NarrativeManager other>>
+Smooth as always Merc.
+<<ShowNarrator NarrativeManager self>>
+...
+<<PlaySFXByName SFXManager AweWhistle>> 
+Gawd she's so hot!
+<<ShowNarrator NarrativeManager other>>
+Did you forget we were crossing paths today?
+->...
+-> No, I just mean...
+-> I've been thinking of you
+[[You look great!|Node_2]]
+[[It's good to see you, V|Node_3]]
 ===
 title: Path2
 tags: 
 colorID: 0
 position: 904,210
+---
+So... How ya been lately?
+===
+title: Node_2
+tags: 
+colorID: 0
+position: 935,-352
+---
+Empty Text
+===
+title: Node_3
+tags: 
+colorID: 0
+position: 1155,-352
 ---
 Empty Text
 ===
