@@ -37,7 +37,52 @@ I'll Leave
 title: Node
 tags: 
 colorID: 0
-position: 677,-208
+position: 627,-197
 ---
-Another thing.
+<<SetCharacter StoryDirector Venus>>
+<< PlayTrackByName MusicManager NormalAmbience>> 
+<<ShowNarrator NarrativeManager other>> 
+Hey Merc
+Merc... 
+Hello? 
+MERCURY!
+<<FadeInScene StoryDirector>> 
+<<ShowNarrator NarrativeManager self>>
+-> Huh. Whaa...?
+-> Who's that.
+<< PlayTrackByName MusicManager TitleAmbience>> 
+<< Peek Venus>> 
+<<ShowNarrator NarrativeManager other>>
+Hey.
+It's Venus.
+<<ShowNarrator NarrativeManager self>>
+[[Heeeeeey Venus... Fancy meeting you here.|Path1]]
+[[Oh! Venus! Sorry! I... Uh... Didn't see you there!|Path2]]
+[[Hi Venus|Path2]]
+-> I didn't ask for you, Venus. Nobody did.
+    <<PlaySFXByName SFXManager MasculineGasp>> 
+    << Appear Venus>> 
+    <<ShowNarrator NarrativeManager other>>
+    Ok.
+    <<ShowNarrator NarrativeManager self>>
+    ...
+    <<PlaySFXByName SFXManager AweWhistle>> 
+    Gawd she's so hot!
+    <<ShowNarrator NarrativeManager other>>
+    I'll Leave.
+<< Disappear Venus>>
+===
+title: Path1
+tags: 
+colorID: 0
+position: 815,-132
+---
+Empty Text
+===
+title: Path2
+tags: 
+colorID: 0
+position: 904,210
+---
+Empty Text
 ===
