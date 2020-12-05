@@ -14,6 +14,28 @@ public class Character : MonoBehaviour
     public float peekDuration;
     public float disappearDuration;
 
+    private Vector3 screenEdgePosition;
+
+    private void Start()
+    {
+        screenEdgePosition = GetScreenEdgePosition();
+
+        offScreen = screenEdgePosition + ((screenEdgePosition - onScreen) * 2);
+        transform.position = offScreen;
+    }
+
+    private Vector3 GetScreenEdgePosition()
+    {
+        // TODO: get side of screen point
+        Ray edgeRay = Camera.main.ScreenPointToRay(new Vector2(0, Screen.height / 2));
+        Plane plane = new Plane(edgeRay.origin, Vector3.zero);
+
+        if (plane.Raycast(edgeRay, out var enter))
+            return edgeRay.GetPoint(enter);
+
+        return peeking;
+    }
+
     // Removes this character from the scene
     public void Remove()
     {
@@ -29,7 +51,7 @@ public class Character : MonoBehaviour
     [YarnCommand("Peek")]
     public void Peek()
     {
-        transform.DOMove(peeking, peekDuration).SetEase(Ease.OutSine);
+        transform.DOMove(screenEdgePosition, peekDuration).SetEase(Ease.OutSine);
     }
 
 
