@@ -32,6 +32,16 @@ colorID: 0
 position: 702,429
 ---
 -Friendly answer leads V to ask Merc how he's been lately
+So..... How you been?
+-> I've been struggling a bit lately. I'm so alone
+-> I've given up on trying to talk to the Sun, she's such a cold bitch
+-> Yeah... I'm ok... Been better
+... (ignores Merc's answer)
+I can't wait to tell you something... 
+Are you ready??
+Well... You know my sister, right? Earth?
+She introduced me to her neighbour
+He's sooooooo hot
 ===
 title: Path 3
 tags: 
@@ -65,7 +75,7 @@ I met someone! (V looks elated)
 title: Node_3
 tags: Friendly
 colorID: 0
-position: 1006,336
+position: 1023,402
 ---
 Empty Text
 ===
@@ -79,7 +89,14 @@ V explains she met Ma through Ea. fusses about how big and strong he is
 title: Node_5
 tags: 
 colorID: 0
-position: 505,-44
+position: 2181,199
+---
+Empty Text
+===
+title: Node_6
+tags: 
+colorID: 0
+position: 367,-112
 ---
 Empty Text
 ===
