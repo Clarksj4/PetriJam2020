@@ -78,7 +78,7 @@ I met someone!
 title: HaveYouMetEarth
 tags: 
 colorID: 0
-position: 1414,-430
+position: 1413,-426
 ---
 Ok, sorry, I'm just so excited!
 We should find you someone special! 
@@ -87,14 +87,13 @@ Have you met Earth?
 -> I've seen her, doing her own thing
 Of course you've SEEN her, we're in the same system!
 I mean have you MET Earth? Spoken with her?
-->???
-->No, I guess not
-->You are my only friend, V, you KNOW that I haven't met your sister.
+[[No, I guess not|WinNode]]
+[[You are my oldest friend, V. My only friend. You KNOW that I haven't met your sister.|VenusHasHadEnough]]
 ===
 title: VenusShaftedLeaves
 tags: 
 colorID: 0
-position: 1419,-64
+position: 1420,-64
 ---
 WTF Merc...
 This is so unlike you
@@ -196,4 +195,50 @@ Once she had calmed down, we could have talked
 I can't stand to hear her talk like that about another body
 Alone again.....
 <<FadeOutScene StoryDirector>>
+===
+title: WinNode
+tags: 
+colorID: 0
+position: 1766,-553
+---
+Earth is quite the character, I know you two would have a blast!
+She can be a little shaky, like yourself
+But I am certain that you would hit it off!
+->Wow V, I don't know what to say...
+Say that you'll let me introduce you! 
+->Ummm....
+I know! We'll go on a double date!
+You & Earth, Mars & Me 
+What fun! 
+I won't hear any arguments from you, we're doing this!
+->Alright V, make the arrangements
+<<Disappear Venus>>
+ [[*sigh*|EndScene]]
+===
+title: VenusHasHadEnough
+tags: 
+colorID: 0
+position: 1798,-315
+---
+Merc...
+I am your friend and I'm trying to help you out
+I was going to offer to introduce you to Earth 
+Not if you can't handle that attitude!
+->V, I just can't deal with this right now
+<<Disappear Venus>>
+[[I'll apologise to her later|EndReflection2]]
+===
+title: EndScene
+tags: 
+colorID: 0
+position: 2084,-567
+---
+Merc - alone
+*sigh*
+It seems that I've missed my chance with Venus
+She's so smitten with this guy Mars, she can't see how I feel.
+Maybe it's for the best.
+Maybe Venus couldn't handle my massive core...
+I'll give this date a go
+Earth may be even more fun than Venus!
 ===
