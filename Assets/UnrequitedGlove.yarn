@@ -96,6 +96,9 @@ tags:
 colorID: 0
 position: 1420,-64
 ---
+<<StopJump Venus>>
+<< TintOn Venus RED>>
+<< Wiggle Venus>> 
 WTF Merc...
 This is so unlike you
 I'll talk to you later when you're not feeling so dense
@@ -105,7 +108,7 @@ I'll talk to you later when you're not feeling so dense
 title: VenusMetMars
 tags: 
 colorID: 0
-position: 1087,-255
+position: 1091,-279
 ---
 <<ShowNarrator NarrativeManager other>>
 Well... You know my sister, right? Earth?
@@ -138,7 +141,6 @@ So... How you been?
 ...
 <<Jump Venus>>
 I can't wait to tell you something
-<<Jump Venus>>
 Are you ready??
 [[...|VenusMetMars]]
 ===
@@ -181,7 +183,7 @@ I'll Leave.
 title: EndReflection1
 tags: 
 colorID: 0
-position: 692,109
+position: 771,111
 ---
 <<ShowNarrator NarrativeManager self>>
 Maybe I should have been nicer to Venus...

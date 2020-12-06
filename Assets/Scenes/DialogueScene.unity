@@ -1506,12 +1506,12 @@ PrefabInstance:
       objectReference: {fileID: 567828699}
     - target: {fileID: 5935829475398715334, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: onOptionsStart.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715334, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: onOptionsStart.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 567828699}
+      objectReference: {fileID: 1662863566}
     - target: {fileID: 5935829475398715334, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: onOptionsEnd.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1526,7 +1526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715334, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: onOptionsStart.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ShowDialog
+      value: SetActive
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715334, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: onOptionsEnd.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -1534,7 +1534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715334, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: onOptionsStart.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: NarrativeManager, Assembly-CSharp
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5935829475398715334, guid: 22db1823ed6990749a70dd5a17c9cead, type: 3}
       propertyPath: onOptionsStart.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
