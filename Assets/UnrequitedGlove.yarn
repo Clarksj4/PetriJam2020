@@ -40,9 +40,8 @@ colorID: 0
 position: 143,-252
 ---
 <<SetCharacter StoryDirector Venus>>
-<<PlayTrackByName MusicManager NormalAmbience>> 
 <<ShowNarrator NarrativeManager other>> 
-Hey Merc
+Hey Merc.
 Merc... 
 Hello? 
 MERCURY!
@@ -108,6 +107,7 @@ tags:
 colorID: 0
 position: 1087,-255
 ---
+<<PlayTrackByName MusicManager NormalAmbience>>
 <<ShowNarrator NarrativeManager other>>
 Well... You know my sister, right? Earth?
 -> Yeah... 
@@ -133,6 +133,7 @@ colorID: 0
 position: 473,-137
 ---
 <<ShowNarrator NarrativeManager other>>
+<<Appear Venus>> 
 So... How you been?
 -> I've given up on trying to talk to the Sun, she's such a cold bitch.
 -> Yeah... I'm ok... Been better.
@@ -239,7 +240,7 @@ Not if you can't handle that attitude!
 title: EndScene
 tags: 
 colorID: 0
-position: 2084,-567
+position: 2084,-565
 ---
 <<ShowNarrator NarrativeManager self>>
 *sigh*
