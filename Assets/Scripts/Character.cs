@@ -27,6 +27,7 @@ public class Character : MonoBehaviour
     private Coroutine _tintRoutine;
     private Color _albedoStartColor;
     private Tweener tween;
+    private Sequence sequence;
 
     private void Start()
     {
@@ -45,7 +46,7 @@ public class Character : MonoBehaviour
     private Vector3 GetScreenEdgePosition()
     {
         // TODO: get side of screen point
-        Ray edgeRay = Camera.main.ScreenPointToRay(new Vector2(0, Screen.height / 2));
+        Ray edgeRay = Camera.main.ScreenPointToRay(new Vector2(Screen.width, Screen.height / 2));
         Plane plane = new Plane(edgeRay.origin, Vector3.zero);
 
         if (plane.Raycast(edgeRay, out var enter))
@@ -88,17 +89,30 @@ public class Character : MonoBehaviour
         tween = transform.DOMove(-offScreen, disappearDuration).SetEase(Ease.OutSine);
     }
 
-    [YarnCommand("PunchUp")]
-    public void PunchUp()
+    [YarnCommand("Jump")]
+    public void Jump()
     {
         KillOtherTweens();
-        tween = transform.DOPunchPosition(Vector3.up * 0.15f, 0.5f);
+        sequence = DOTween.Sequence();
+        sequence.Append(transform.DOPunchPosition(Vector3.up * 0.15f, 0.5f, 8, 0f));
+        sequence.Append(transform.DOPunchPosition(Vector3.up * 0.15f, 0.5f, 8, 0f));
+        sequence.AppendInterval(1f);
+        sequence.SetLoops(-1, LoopType.Restart);
     }
 
     private void KillOtherTweens()
     {
         if (tween != null)
+        {
+            tween.Complete();
             tween.Kill();
+        }
+
+        if(sequence != null)
+        {
+            sequence.Complete();
+            sequence.Kill();
+        }
     }
 
     [YarnCommand("Wiggle")]
@@ -146,6 +160,11 @@ public class Character : MonoBehaviour
         {
             targetColor = Color.black;
         }
+        else if (color == "WHITE")
+        {
+            targetColor = Color.white;
+        }
+
 
         _tintRoutine = StartCoroutine(TintToColor(targetColor));
     }
