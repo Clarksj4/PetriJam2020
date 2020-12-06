@@ -10,6 +10,11 @@ public class MusicManager : MonoBehaviour
     public List<AudioSource> Tracks;
     private List<float> MaxVolumes = new List<float>();
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
     private void Start()
     {
         // Current volume is considered max volume.
