@@ -51,7 +51,7 @@ MonoBehaviour:
   peeking: {x: -7, y: 0, z: 0}
   onScreen: {x: 0, y: 0, z: 0}
   appearDuration: 0.5
-  peekDuration: 2
+  peekDuration: 0.7
   disappearDuration: 1
 --- !u!1 &3644692684241801742
 GameObject:
