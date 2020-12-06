@@ -37,7 +37,7 @@ I'll Leave
 title: Node
 tags: 
 colorID: 0
-position: 206,-194
+position: 145,-253
 ---
 <<SetCharacter StoryDirector Venus>>
 <<PlayTrackByName MusicManager NormalAmbience>> 
@@ -57,7 +57,7 @@ Hey.
 It's Venus.
 <<ShowNarrator NarrativeManager self>>
 [[Heeeeeey Venus... Fancy meeting you here.|Flirt]]
-[[Oh! Venus! Sorry! I... Uh... Didn't see you there!|VenusMetMars]]
+[[Oh! Venus! Sorry! I... Uh... Didn't see you there!|HowYouBeen]]
 -> I didn't ask for you, Venus. Nobody did.
     <<PlaySFXByName SFXManager RecordScratch>>
     <<StopMusic MusicManager>> 
@@ -68,49 +68,30 @@ It's Venus.
     << Disappear Venus>>
     <<FadeOutScene StoryDirector>>
 ===
-title: Flirt
-tags: 
-colorID: 0
-position: 467,-366
----
-<<ShowNarrator NarrativeManager other>>
-<<Appear Venus>> 
-Smooth as always Merc.
-<<ShowNarrator NarrativeManager self>>
-...
-<<PlaySFXByName SFXManager AweWhistle>> 
-Gawd she's so hot!
-<<ShowNarrator NarrativeManager other>>
-Did you forget we were crossing orbits today?
-->...
--> No, I just...
--> I've been thinking of you
-...
-[[You look great!|ExcitingNews]]
-[[It's good to see you, V|Node_3]]
-===
 title: ExcitingNews
 tags: 
 colorID: 0
-position: 808,-441
+position: 775,-373
 ---
-<<>>
-Thanks Merc
+<<ShowNarrator NarrativeManager other>>
+Thanks Merc.
 I have exciting news!
 -> ...
-I met someone! (V looks elated)
-[[How?!?!?!|Node_4]]
-[[Who?!?!?!??!|Node_4]]
+<<Jump Venus>>
+<<PlaySFXByName SFXManager MasculineGasp>>
+I met someone!
+[[How?!?!?!|VenusMetMars]]
+[[Who?!?!?!??!|VenusMetMars]]
 ===
-title: Node_3
+title: HaveYouMetEarth
 tags: 
 colorID: 0
-position: 825,-146
+position: 1414,-431
 ---
 Ok, sorry, I'm just so excited!
 You'll understand when you meet him
 ->When I meet him?!?
-(Mercury freaking out)
+Mercury freaking out
 ->Honestly, V, 
 
 Now that I think about it
@@ -125,7 +106,7 @@ I mean have you MET Earth? Spoken with her?
 title: VenusShaftedLeaves
 tags: 
 colorID: 0
-position: 873,118
+position: 1419,-65
 ---
 WTF Merc...
 That is so unlike you.
@@ -134,8 +115,30 @@ I wonder what's got him all riled up...
 ===
 title: VenusMetMars
 tags: 
-colorID: 8
-position: 479,111
+colorID: 0
+position: 1089,-255
+---
+<<ShowNarrator NarrativeManager other>>
+Well... You know my sister, right? Earth?
+-> Yeah... 
+She introduced me to her neighbour, Mars
+He is just sooooooo hot... I can't believe that I've never noticed him before!
+I've never felt like this before!
+<<ShowNarrator NarrativeManager self>>
+... I'm so alone...
+<<ShowNarrator NarrativeManager other>>
+He's just soooooo dreamy!...
+Riiiiiiight?!? 
+-> Could we talk about this later?
+Mars and Venus... 
+It has a certain ring to it, don't you think?
+[[Later V.|VenusShaftedLeaves]]
+[[Sure V, whatever|HaveYouMetEarth]]
+===
+title: HowYouBeen
+tags: 
+colorID: 0
+position: 644,-101
 ---
 <<ShowNarrator NarrativeManager other>>
 So... How you been?
@@ -146,28 +149,24 @@ So... How you been?
 I can't wait to tell you something
 <<Jump Venus>>
 Are you ready??
-->...
-Well... You know my sister, right? Earth?
--> Yeah... 
-She introduced me to her neighbour, Mars
-He is just sooooooo hot... I can't believe that I've never noticed him before!
-<<ShowNarrator NarrativeManager self>>
-... I'm so alone...
-<<ShowNarrator NarrativeManager other>>
-I've never felt like this before!
-He's just soooooo dreamy!...
--> I've been really struggling lately and need a friend right now.
--> Could we talk about this later?
-Riiiiiiight?!? 
-Mars and Venus... 
-It has a certain ring to it, don't you think?
-[[Later V|VenusShaftedLeaves]]
-[[Sure V, whatever|Node_3]]
+[[...|VenusMetMars]]
 ===
-title: Node_4
+title: Flirt
 tags: 
 colorID: 0
-position: 1109,-508
+position: 479,-366
 ---
-Empty Text
+<<ShowNarrator NarrativeManager other>>
+<<Appear Venus>> 
+Smooth as always Merc.
+<<ShowNarrator NarrativeManager self>>
+...
+<<PlaySFXByName SFXManager AweWhistle>> 
+Gawd she's so hot!
+<<ShowNarrator NarrativeManager other>>
+Did you forget we were crossing orbits today?
+-> No, I just...
+...
+[[You look great!|ExcitingNews]]
+[[It's good to see you, V.|ExcitingNews]]
 ===

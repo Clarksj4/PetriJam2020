@@ -8,11 +8,87 @@ ScriptedImporter:
   assetBundleName: 
   assetBundleVariant: 
   script: {fileID: 11500000, guid: 94073015eacc34c1d8fc6786e43d60ca, type: 3}
-  baseLanguageID: 
+  baseLanguageID: en-NZ
   stringIDs:
   - UnrequitedGlove-Start-0
+  - UnrequitedGlove-Start-1
+  - UnrequitedGlove-Start-2
+  - UnrequitedGlove-Start-3
+  - UnrequitedGlove-Start-4
+  - UnrequitedGlove-Start-5
+  - UnrequitedGlove-Start-6
+  - UnrequitedGlove-Start-7
+  - UnrequitedGlove-Start-8
+  - UnrequitedGlove-Start-9
+  - UnrequitedGlove-Start-10
+  - UnrequitedGlove-Start-11
+  - UnrequitedGlove-Start-12
+  - UnrequitedGlove-Start-13
+  - UnrequitedGlove-Node-14
+  - UnrequitedGlove-Node-15
+  - UnrequitedGlove-Node-16
+  - UnrequitedGlove-Node-17
+  - UnrequitedGlove-Node-18
+  - UnrequitedGlove-Node-19
+  - UnrequitedGlove-Node-20
+  - UnrequitedGlove-Node-21
+  - UnrequitedGlove-Node-22
+  - UnrequitedGlove-Node-23
+  - UnrequitedGlove-Node-24
+  - UnrequitedGlove-Node-25
+  - UnrequitedGlove-Node-26
+  - UnrequitedGlove-Flirt-27
+  - UnrequitedGlove-Flirt-28
+  - UnrequitedGlove-Flirt-29
+  - UnrequitedGlove-Flirt-30
+  - UnrequitedGlove-Flirt-31
+  - UnrequitedGlove-Flirt-32
+  - UnrequitedGlove-Flirt-33
+  - UnrequitedGlove-Flirt-34
+  - UnrequitedGlove-ExcitingNews-35
+  - UnrequitedGlove-ExcitingNews-36
+  - UnrequitedGlove-ExcitingNews-37
+  - UnrequitedGlove-ExcitingNews-38
+  - UnrequitedGlove-ExcitingNews-39
+  - UnrequitedGlove-ExcitingNews-40
+  - UnrequitedGlove-HaveYouMetEarth-41
+  - UnrequitedGlove-HaveYouMetEarth-42
+  - UnrequitedGlove-HaveYouMetEarth-43
+  - UnrequitedGlove-HaveYouMetEarth-44
+  - UnrequitedGlove-HaveYouMetEarth-45
+  - UnrequitedGlove-HaveYouMetEarth-46
+  - UnrequitedGlove-HaveYouMetEarth-47
+  - UnrequitedGlove-HaveYouMetEarth-48
+  - UnrequitedGlove-HaveYouMetEarth-49
+  - UnrequitedGlove-HaveYouMetEarth-50
+  - UnrequitedGlove-HaveYouMetEarth-51
+  - UnrequitedGlove-HaveYouMetEarth-52
+  - UnrequitedGlove-HaveYouMetEarth-53
+  - UnrequitedGlove-VenusShaftedLeaves-54
+  - UnrequitedGlove-VenusShaftedLeaves-55
+  - UnrequitedGlove-VenusShaftedLeaves-56
+  - UnrequitedGlove-VenusMetMars-57
+  - UnrequitedGlove-VenusMetMars-58
+  - UnrequitedGlove-VenusMetMars-59
+  - UnrequitedGlove-VenusMetMars-60
+  - UnrequitedGlove-VenusMetMars-61
+  - UnrequitedGlove-VenusMetMars-62
+  - UnrequitedGlove-VenusMetMars-63
+  - UnrequitedGlove-VenusMetMars-64
+  - UnrequitedGlove-VenusMetMars-65
+  - UnrequitedGlove-VenusMetMars-66
+  - UnrequitedGlove-VenusMetMars-67
+  - UnrequitedGlove-VenusMetMars-68
+  - UnrequitedGlove-VenusMetMars-69
+  - UnrequitedGlove-HowYouBeen-70
+  - UnrequitedGlove-HowYouBeen-71
+  - UnrequitedGlove-HowYouBeen-72
+  - UnrequitedGlove-HowYouBeen-73
+  - UnrequitedGlove-HowYouBeen-74
+  - UnrequitedGlove-HowYouBeen-75
+  - UnrequitedGlove-HowYouBeen-76
   compilationStatus: 1
   isSuccesfullyCompiled: 1
   compilationErrorMessage: 
-  baseLanguage: {instanceID: 0}
+  baseLanguage: {fileID: 7128917941130120860, guid: d90f5fa4db04a9347965671dac27349a, type: 3}
   localizations: []
