@@ -26,6 +26,7 @@ public class Character : MonoBehaviour
 
     private Coroutine _tintRoutine;
     private Color _albedoStartColor;
+    private Tweener tween;
 
     private void Start()
     {
@@ -68,26 +69,36 @@ public class Character : MonoBehaviour
     [YarnCommand("Peek")]
     public void Peek()
     {
-        transform.DOMove(screenEdgePosition, peekDuration).SetEase(Ease.OutSine);
+        KillOtherTweens();
+        tween = transform.DOMove(screenEdgePosition, peekDuration).SetEase(Ease.OutSine);
     }
 
 
     [YarnCommand("Appear")]
     public void Appear()
     {
-        transform.DOMove(onScreen, appearDuration).SetEase(Ease.OutSine);
+        KillOtherTweens();
+        tween = transform.DOMove(onScreen, appearDuration).SetEase(Ease.OutSine);
     }
 
     [YarnCommand("Disappear")]
     public void Disappear()
     {
-        transform.DOMove(-offScreen, disappearDuration).SetEase(Ease.OutSine);
+        KillOtherTweens();
+        tween = transform.DOMove(-offScreen, disappearDuration).SetEase(Ease.OutSine);
     }
 
     [YarnCommand("PunchUp")]
     public void PunchUp()
     {
-        transform.DOPunchPosition(Vector3.up * 0.15f, 0.5f);
+        KillOtherTweens();
+        tween = transform.DOPunchPosition(Vector3.up * 0.15f, 0.5f);
+    }
+
+    private void KillOtherTweens()
+    {
+        if (tween != null)
+            tween.Kill();
     }
 
     [YarnCommand("Wiggle")]
