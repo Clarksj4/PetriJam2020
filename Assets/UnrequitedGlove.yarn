@@ -98,17 +98,18 @@ I mean have you MET Earth? Spoken with her?
 title: VenusShaftedLeaves
 tags: 
 colorID: 0
-position: 1419,-65
+position: 1419,-64
 ---
 WTF Merc...
-That is so unlike you.
-I wonder what's got him all riled up...
+This is so unlike you
+I'll talk to you later when you're not feeling so dense
 <<Disappear Venus>>
+ [[Venus, I'm sorry!|EndReflection2]]
 ===
 title: VenusMetMars
 tags: 
 colorID: 0
-position: 1089,-255
+position: 1087,-255
 ---
 <<ShowNarrator NarrativeManager other>>
 Well... You know my sister, right? Earth?
@@ -120,17 +121,19 @@ I've never felt like this before!
 ... I'm so alone...
 <<ShowNarrator NarrativeManager other>>
 He's just soooooo dreamy!...
+->I've been really struggling lately and need a friend right now
 Riiiiiiight?!? 
 -> Could we talk about this later?
 Mars and Venus... 
 It has a certain ring to it, don't you think?
+I'm going to ask Earth to set up a date!
 [[Later V.|VenusShaftedLeaves]]
 [[Sure V, whatever|HaveYouMetEarth]]
 ===
 title: HowYouBeen
 tags: 
 colorID: 0
-position: 468,-137
+position: 473,-137
 ---
 <<ShowNarrator NarrativeManager other>>
 So... How you been?
@@ -174,5 +177,27 @@ position: 455,105
 Oh.
 I'll Leave.
 <<Disappear Venus>>
+-> Wait! Venus!
+[[*sigh*|EndReflection1]]
+===
+title: EndReflection1
+tags: 
+colorID: 0
+position: 692,109
+---
+Maybe I should have been nicer to Venus...
+I just didn't want to seem too eager 
+Alone again.....
+<<FadeOutScene StoryDirector>>
+===
+title: EndReflection2
+tags: 
+colorID: 0
+position: 1649,-59
+---
+Maybe I should have heard her out
+Once she had calmed down, we could have talked 
+I can't stand to hear her talk like that about another body
+Alone again.....
 <<FadeOutScene StoryDirector>>
 ===
