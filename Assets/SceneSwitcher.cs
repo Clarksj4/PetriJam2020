@@ -9,12 +9,18 @@ public class SceneSwitcher : MonoBehaviour
 {
     public Image FadeImage;
 
-    public void SwitchToGameScene()
+    private void Awake()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
+
+    public void SwitchToScene(string scene)
     {
         Sequence sequence = DOTween.Sequence();
         sequence.Append(FadeImage.DOFade(1f, 2f));
         sequence.OnComplete(() => {
-            SceneManager.LoadScene("DialogueScene");
+            //SceneManager.LoadScene("DialogueScene");
+            SceneManager.LoadScene(scene);
         });
     }
 }

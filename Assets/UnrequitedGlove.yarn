@@ -42,7 +42,7 @@ position: 143,-252
 <<SetCharacter StoryDirector Venus>>
 <<PlayTrackByName MusicManager NormalAmbience>> 
 <<ShowNarrator NarrativeManager other>> 
-Hey Merc
+Hey Merc.
 Merc... 
 Hello? 
 MERCURY!
