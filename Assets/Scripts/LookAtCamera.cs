@@ -3,16 +3,16 @@ using System.Collections;
 
 public class LookAtCamera : MonoBehaviour
 {
-    private Camera camera;
+    private Camera _mainCamera;
 
     private void Start()
     {
-        camera = Camera.main;
+        _mainCamera = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.LookAt(camera.transform);
+        transform.LookAt(_mainCamera.transform);
     }
 }
