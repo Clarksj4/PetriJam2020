@@ -100,6 +100,12 @@ public class Character : MonoBehaviour
         sequence.SetLoops(-1, LoopType.Restart);
     }
 
+    [YarnCommand("StopJump")]
+    public void StopJump()
+    {
+        KillOtherTweens();
+    }
+
     private void KillOtherTweens()
     {
         if (tween != null)
@@ -163,6 +169,10 @@ public class Character : MonoBehaviour
         else if (color == "WHITE")
         {
             targetColor = Color.white;
+        }
+        else if (color == "GREY")
+        {
+            targetColor = Color.grey;
         }
 
 

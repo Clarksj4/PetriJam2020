@@ -80,6 +80,7 @@ tags:
 colorID: 0
 position: 1413,-426
 ---
+<<StopJump Venus>>
 Ok, sorry, I'm just so excited!
 We should find you someone special! 
 ->That's really not necessary V
@@ -169,9 +170,11 @@ position: 455,105
 <<StopMusic MusicManager>> 
 <<Appear Venus>> 
 <<ShowNarrator NarrativeManager other>>
+<< TintOn Venus GREY>> 
 Oh.
 I'll Leave.
 <<Disappear Venus>>
+<<ShowNarrator NarrativeManager self>>
 ->Wait! Venus!
 [[*sigh*|EndReflection1]]
 ===
@@ -180,6 +183,7 @@ tags:
 colorID: 0
 position: 692,109
 ---
+<<ShowNarrator NarrativeManager self>>
 Maybe I should have been nicer to Venus...
 I just didn't want to seem too eager 
 Alone again.....

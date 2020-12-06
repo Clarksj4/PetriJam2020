@@ -7,11 +7,12 @@ public class NarrativeManager : MonoBehaviour
 {
     public GameObject otherText;
     public GameObject selfText;
+    private bool showOther;
 
     [YarnCommand("ShowNarrator")]
     public void ShowNarrator(string other)
     {
-        bool showOther = other == "other";
+        showOther = other == "other";
         ShowNarrator(showOther);
     }
 
@@ -19,5 +20,10 @@ public class NarrativeManager : MonoBehaviour
     {
         otherText.SetActive(other);
         selfText.SetActive(!other);
+    }
+
+    public void ShowDialog()
+    {
+        ShowNarrator(showOther);
     }
 }
