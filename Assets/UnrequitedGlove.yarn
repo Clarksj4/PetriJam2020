@@ -239,7 +239,7 @@ tags:
 colorID: 0
 position: 2084,-567
 ---
-Merc - alone
+<<ShowNarrator NarrativeManager self>>
 *sigh*
 It seems that I've missed my chance with Venus
 She's so smitten with this guy Mars, she can't see how I feel.
@@ -247,4 +247,5 @@ Maybe it's for the best.
 Maybe Venus couldn't handle my massive core...
 I'll give this date a go
 Earth may be even more fun than Venus!
+<<FadeOutScene StoryDirector>>
 ===
