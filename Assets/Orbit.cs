@@ -6,7 +6,7 @@ public class Orbit : MonoBehaviour
 {
     float angle = 0;
     float speed = (2 * Mathf.PI) / 20f;
-    float radius = 3;
+    float radius = 2.5f;
 
     void Update()
     {
