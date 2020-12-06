@@ -94,11 +94,9 @@ I mean have you MET Earth? Spoken with her?
 title: VenusShaftedLeaves
 tags: 
 colorID: 0
-position: 1420,-64
+position: 1418,-64
 ---
-<<StopJump Venus>>
-<< TintOn Venus RED>>
-<< Wiggle Venus>> 
+<< TintOn Venus RED>> 
 WTF Merc...
 This is so unlike you
 I'll talk to you later when you're not feeling so dense
@@ -108,7 +106,7 @@ I'll talk to you later when you're not feeling so dense
 title: VenusMetMars
 tags: 
 colorID: 0
-position: 1091,-279
+position: 1087,-255
 ---
 <<ShowNarrator NarrativeManager other>>
 Well... You know my sister, right? Earth?
@@ -141,6 +139,7 @@ So... How you been?
 ...
 <<Jump Venus>>
 I can't wait to tell you something
+<<Jump Venus>>
 Are you ready??
 [[...|VenusMetMars]]
 ===
@@ -183,7 +182,7 @@ I'll Leave.
 title: EndReflection1
 tags: 
 colorID: 0
-position: 771,111
+position: 690,107
 ---
 <<ShowNarrator NarrativeManager self>>
 Maybe I should have been nicer to Venus...
@@ -194,8 +193,9 @@ Alone again.....
 title: EndReflection2
 tags: 
 colorID: 0
-position: 1649,-59
+position: 1650,-59
 ---
+<<ShowNarrator NarrativeManager self>>
 Maybe I should have heard her out
 Once she had calmed down, we could have talked 
 I can't stand to hear her talk like that about another body
@@ -224,7 +224,7 @@ I won't hear any arguments from you, we're doing this!
 title: VenusHasHadEnough
 tags: 
 colorID: 0
-position: 1798,-315
+position: 1796,-314
 ---
 Merc...
 I am your friend and I'm trying to help you out
