@@ -14,8 +14,8 @@ MERCURY!
 ===
 title: Path 1
 tags: Flirty 
-colorID: 0
-position: 661,138
+colorID: 1
+position: 664,134
 ---
 Smooth as always Merc
 Did you forget we were crossing paths today?
@@ -28,7 +28,7 @@ Did you forget we were crossing paths today?
 ===
 title: Path 2
 tags: Friendly Neutral
-colorID: 0
+colorID: 8
 position: 709,426
 ---
 -Friendly answer leads V to ask Merc how he's been lately
@@ -67,20 +67,18 @@ Just as I thought it was time to tell her
 ===
 title: Node
 tags: 
-colorID: 0
-position: 1325,-57
+colorID: 1
+position: 1328,-91
 ---
 No need to act so surprised! 
-Some think i am quite beautiful, you know
-->Oh Venus, you are beautiful
-
-Venus misunderstands Mercs confusion 
-Merc panics that he may have missed his shot
-Merc lays it on thick?
+Some think I am quite beautiful, you know
+[[Oh Venus, you are the most beautiful planet I have ever seen!|Node_5]]
+[[No one would dare question your beauty|Node_5]]
+Who is he?
 ===
 title: Node_2
 tags: Flirty 
-colorID: 0
+colorID: 1
 position: 995,70
 ---
 (V blushes)
@@ -95,7 +93,7 @@ I met someone! (V looks elated)
 title: Venus calms down and asks Merc whats bugging him?
 tags: Friendly
 colorID: 0
-position: 1270,388
+position: 1270,386
 ---
 Ok, sorry, I don't mean to bore you
 I'm just so excited!
@@ -119,7 +117,7 @@ position: 1294,173
 ---
 Well... You know my sister, right? Earth?
 -> Yeah... 
-She introduced me to her neighbour, Mars!
+She introduced me to her neighbour, Mars and he is soooooo hot!
 -> Mars?!? That hot head!?
 
 
@@ -136,7 +134,7 @@ It has a certain ring to it, don't you think?
 title: Node_5
 tags: 
 colorID: 0
-position: 1616,-73
+position: 1608,-203
 ---
 Empty Text
 ===
@@ -159,7 +157,14 @@ How rude!
 title: Node_8
 tags: 
 colorID: 0
-position: 1822,279
+position: 2009,246
+---
+Empty Text
+===
+title: Node_3
+tags: 
+colorID: 0
+position: 1573,542
 ---
 Empty Text
 ===
