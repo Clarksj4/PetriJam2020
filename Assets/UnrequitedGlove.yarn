@@ -189,6 +189,7 @@ Maybe I should have been nicer to Venus...
 I just didn't want to seem too eager 
 Alone again.....
 <<FadeOutScene StoryDirector>>
+<<SwitchToScene SceneSwitcher StartScene>>
 ===
 title: EndReflection2
 tags: 
@@ -201,6 +202,7 @@ Once she had calmed down, we could have talked
 I can't stand to hear her talk like that about another body
 Alone again.....
 <<FadeOutScene StoryDirector>>
+<<SwitchToScene SceneSwitcher StartScene>>
 ===
 title: WinNode
 tags: 
@@ -248,4 +250,5 @@ Maybe Venus couldn't handle my massive core...
 I'll give this date a go
 Earth may be even more fun than Venus!
 <<FadeOutScene StoryDirector>>
+<<SwitchToScene SceneSwitcher StartScene>>
 ===
