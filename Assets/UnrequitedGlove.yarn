@@ -37,7 +37,7 @@ I'll Leave
 title: Node
 tags: 
 colorID: 0
-position: 145,-253
+position: 143,-252
 ---
 <<SetCharacter StoryDirector Venus>>
 <<PlayTrackByName MusicManager NormalAmbience>> 
@@ -58,15 +58,7 @@ It's Venus.
 <<ShowNarrator NarrativeManager self>>
 [[Heeeeeey Venus... Fancy meeting you here.|Flirt]]
 [[Oh! Venus! Sorry! I... Uh... Didn't see you there!|HowYouBeen]]
--> I didn't ask for you, Venus. Nobody did.
-    <<PlaySFXByName SFXManager RecordScratch>>
-    <<StopMusic MusicManager>> 
-    <<Appear Venus>> 
-    <<ShowNarrator NarrativeManager other>>
-    Oh.
-    I'll Leave.
-    << Disappear Venus>>
-    <<FadeOutScene StoryDirector>>
+[[I didn't ask for you, Venus. Nobody did|HarshLeave]]
 ===
 title: ExcitingNews
 tags: 
@@ -138,7 +130,7 @@ It has a certain ring to it, don't you think?
 title: HowYouBeen
 tags: 
 colorID: 0
-position: 644,-101
+position: 468,-137
 ---
 <<ShowNarrator NarrativeManager other>>
 So... How you been?
@@ -154,7 +146,7 @@ Are you ready??
 title: Flirt
 tags: 
 colorID: 0
-position: 479,-366
+position: 473,-365
 ---
 <<ShowNarrator NarrativeManager other>>
 <<Appear Venus>> 
@@ -169,4 +161,18 @@ Did you forget we were crossing orbits today?
 ...
 [[You look great!|ExcitingNews]]
 [[It's good to see you, V.|ExcitingNews]]
+===
+title: HarshLeave
+tags: 
+colorID: 0
+position: 455,105
+---
+<<PlaySFXByName SFXManager RecordScratch>>
+<<StopMusic MusicManager>> 
+<<Appear Venus>> 
+<<ShowNarrator NarrativeManager other>>
+Oh.
+I'll Leave.
+<<Disappear Venus>>
+<<FadeOutScene StoryDirector>>
 ===
