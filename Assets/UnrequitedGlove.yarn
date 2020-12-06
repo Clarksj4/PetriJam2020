@@ -78,17 +78,13 @@ I met someone!
 title: HaveYouMetEarth
 tags: 
 colorID: 0
-position: 1414,-431
+position: 1414,-430
 ---
 Ok, sorry, I'm just so excited!
-You'll understand when you meet him
-->When I meet him?!?
-Mercury freaking out
-->Honestly, V, 
-
-Now that I think about it
+We should find you someone special! 
+->That's really not necessary V
 Have you met Earth? 
--> I've seen her, following her orbit
+-> I've seen her, doing her own thing
 Of course you've SEEN her, we're in the same system!
 I mean have you MET Earth? Spoken with her?
 ->???
@@ -177,7 +173,7 @@ position: 455,105
 Oh.
 I'll Leave.
 <<Disappear Venus>>
--> Wait! Venus!
+->Wait! Venus!
 [[*sigh*|EndReflection1]]
 ===
 title: EndReflection1
